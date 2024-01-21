@@ -1,8 +1,8 @@
 import componentsImage from './assets/images/components.png';
 import stateImage from './assets/images/state.png';
 import eventsImage from './assets/images/events.png';
-import ImageCard from './components/ImageCard/ImageCard';
-import ConceptsCard from './components/ConceptsCard/ConceptsCard'; 
+import ImageCard from './components/Card/ImageCard/ImageCard';
+import ConceptsCard from './components/Card/ConceptsCard/ConceptsCard'; 
 import keyConceptsImage from './assets/images/key-concepts.png';
 
 const concepts = [

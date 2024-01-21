@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './ConceptsCard.css';
-import UnorderedList from '../UnorderedList/UnorderedList';
-import OrderedList from '../OrderedList/OrderedList';
-import Concept from '../Concept/Concept';
+import UnorderedList from '../../UnorderedList/UnorderedList';
+import OrderedList from '../../OrderedList/OrderedList';
+import Concept from '../../Concept/Concept';
 
 const ConceptsCard = props => {
 	const classList = 'concepts ' + props.className;
