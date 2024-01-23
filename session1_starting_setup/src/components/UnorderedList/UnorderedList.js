@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './UnorderedList.css';
 
 const UnorderedList = props => {
-	const classList = 'u-list ' + props.classList;
+	const classList = 'u-list ' + props.className;
 	return(
 		<ul className={classList}>{props.children}</ul>
 	);

@@ -3,8 +3,12 @@ import PropTypes from 'prop-types';
 import styles from './Header.css';
 
 const Header = props => {
+	// const {keyConceptsImage, imgCardTitle, imgCardDescription} = props;
+	const classList = 'header ' + props.className;
 	return (
-		<header>{props.children}</header>
+		<div className={classList}>
+			{props.children}
+		</div>
 	)
 }
 

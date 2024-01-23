@@ -6,16 +6,14 @@ import OrderedList from '../../OrderedList/OrderedList';
 import Concept from '../../Concept/Concept';
 
 const ConceptsCard = props => {
-	const classList = 'concepts ' + props.className;
-	const concepts = props.concepts;
+	const classList = props.className;
+	// const concepts = props.concepts;
 	return(
-		<div className={classList}>
-			<UnorderedList>
-				<OrderedList>
-					{concepts.map(concept => <Concept title={concept.title} image={concept.image} description={concept.description}/>)}
-				</OrderedList>
-			</UnorderedList>
-		</div>
+		// <div id='concepts' className={classList}>
+			<ul id='concepts' className={classList}>
+				{props.children}
+			</ul>
+		// </div>
 	);
 }
 

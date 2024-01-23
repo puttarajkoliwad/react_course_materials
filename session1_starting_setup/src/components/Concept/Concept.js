@@ -3,16 +3,14 @@ import PropTypes from 'prop-types';
 import './Concept.css';
 
 const Concept = props => {
-	const title = props.title;
-	const description = props.description;
-	const image = props.image;
+	const {title, description, image} = props;
 
 	return(
-		<div className='concept'>
-			<img class='img' src={image} alt='TODO Title' />
-			<h2 class='h2'>{title}</h2>
-			<p class='p'>{description}</p>
-		</div>
+		<li className='concept'>
+			<img src={image} alt='TODO Title' />
+			<h2>{title}</h2>
+			<p>{description}</p>
+		</li>
 	);
 }
 
