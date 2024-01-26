@@ -53,7 +53,7 @@ function App() {
       </Header>
 
       <ConceptsCard>
-        {concepts.map(concept =>(<Concept image={concept.image} />))}
+        {concepts.map(concept =>(<Concept image={concept.image} title={concept.title} description={concept.description} />))}
       </ConceptsCard> 
     </div>
   );
