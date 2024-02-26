@@ -1,9 +1,11 @@
 import componentsImage from './assets/images/components.png';
 import stateImage from './assets/images/state.png';
 import eventsImage from './assets/images/events.png';
-import ImageCard from './components/ImageCard/ImageCard';
-import ConceptsCard from './components/ConceptsCard/ConceptsCard'; 
+import ImageCard from './components/Card/ImageCard/ImageCard';
+import ConceptsCard from './components/Card/ConceptsCard/ConceptsCard'; 
 import keyConceptsImage from './assets/images/key-concepts.png';
+import Header from './components/Header/Header';
+import Concept from './components/Concept/Concept';
 
 const concepts = [
   {
@@ -45,15 +47,15 @@ function App() {
     //   </ul>
     // </div>
 
-    <>
-      <header>
+    <div>
+      <Header>
         <ImageCard keyConceptsImage={keyConceptsImage} title={imgCardTitle} description={imgCardDescription} />
-      </header>
+      </Header>
 
-      <body>
-        <ConceptsCard concepts={concepts} />  
-      </body>
-    </>
+      <ConceptsCard>
+        {concepts.map(concept =>(<Concept image={concept.image} title={concept.title} description={concept.description} />))}
+      </ConceptsCard> 
+    </div>
   );
 }
 
