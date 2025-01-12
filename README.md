@@ -81,8 +81,8 @@ Class | Method | HTTP request | Description
 
 ## Documentation for Models
 
+ - [OpenapiClient::Classification](docs/Classification.md)
  - [OpenapiClient::ClassificationsCreateNewRequest](docs/ClassificationsCreateNewRequest.md)
- - [OpenapiClient::ClassificationsShowRequest](docs/ClassificationsShowRequest.md)
 
 
 ## Documentation for Authorization

@@ -17,8 +17,8 @@ require 'openapi_client/version'
 require 'openapi_client/configuration'
 
 # Models
+require 'openapi_client/models/classification'
 require 'openapi_client/models/classifications_create_new_request'
-require 'openapi_client/models/classifications_show_request'
 
 # APIs
 require 'openapi_client/api/default_api'

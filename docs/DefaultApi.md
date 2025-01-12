@@ -137,7 +137,7 @@ No authorization required
 
 ## classifications_show
 
-> classifications_show(classifications_show_request)
+> classifications_show(classification)
 
 
 
@@ -150,11 +150,11 @@ require 'time'
 require 'openapi_client'
 
 api_instance = OpenapiClient::DefaultApi.new
-classifications_show_request = OpenapiClient::ClassificationsShowRequest.new({data: 'data_example'}) # ClassificationsShowRequest | 
+classification = OpenapiClient::Classification.new # Classification | 
 
 begin
   
-  api_instance.classifications_show(classifications_show_request)
+  api_instance.classifications_show(classification)
 rescue OpenapiClient::ApiError => e
   puts "Error when calling DefaultApi->classifications_show: #{e}"
 end
@@ -164,12 +164,12 @@ end
 
 This returns an Array which contains the response data (`nil` in this case), status code and headers.
 
-> <Array(nil, Integer, Hash)> classifications_show_with_http_info(classifications_show_request)
+> <Array(nil, Integer, Hash)> classifications_show_with_http_info(classification)
 
 ```ruby
 begin
   
-  data, status_code, headers = api_instance.classifications_show_with_http_info(classifications_show_request)
+  data, status_code, headers = api_instance.classifications_show_with_http_info(classification)
   p status_code # => 2xx
   p headers # => { ... }
   p data # => nil
@@ -182,7 +182,7 @@ end
 
 | Name | Type | Description | Notes |
 | ---- | ---- | ----------- | ----- |
-| **classifications_show_request** | [**ClassificationsShowRequest**](ClassificationsShowRequest.md) |  |  |
+| **classification** | [**Classification**](Classification.md) |  |  |
 
 ### Return type
 

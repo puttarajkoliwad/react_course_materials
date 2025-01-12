@@ -143,25 +143,25 @@ module OpenapiClient
     end
 
     # Checks if the given data is good or bad
-    # @param classifications_show_request [ClassificationsShowRequest] 
+    # @param classification [Classification] 
     # @param [Hash] opts the optional parameters
     # @return [nil]
-    def classifications_show(classifications_show_request, opts = {})
-      classifications_show_with_http_info(classifications_show_request, opts)
+    def classifications_show(classification, opts = {})
+      classifications_show_with_http_info(classification, opts)
       nil
     end
 
     # Checks if the given data is good or bad
-    # @param classifications_show_request [ClassificationsShowRequest] 
+    # @param classification [Classification] 
     # @param [Hash] opts the optional parameters
     # @return [Array<(nil, Integer, Hash)>] nil, response status code and response headers
-    def classifications_show_with_http_info(classifications_show_request, opts = {})
+    def classifications_show_with_http_info(classification, opts = {})
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: DefaultApi.classifications_show ...'
       end
-      # verify the required parameter 'classifications_show_request' is set
-      if @api_client.config.client_side_validation && classifications_show_request.nil?
-        fail ArgumentError, "Missing the required parameter 'classifications_show_request' when calling DefaultApi.classifications_show"
+      # verify the required parameter 'classification' is set
+      if @api_client.config.client_side_validation && classification.nil?
+        fail ArgumentError, "Missing the required parameter 'classification' when calling DefaultApi.classifications_show"
       end
       # resource path
       local_var_path = '/check'
@@ -181,7 +181,7 @@ module OpenapiClient
       form_params = opts[:form_params] || {}
 
       # http body (model)
-      post_body = opts[:debug_body] || @api_client.object_to_http_body(classifications_show_request)
+      post_body = opts[:debug_body] || @api_client.object_to_http_body(classification)
 
       # return_type
       return_type = opts[:debug_return_type]
